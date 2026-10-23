@@ -1,0 +1,12 @@
+node_modules/
+.env
+.DS_Store
+dist/
+build/
+backend/uploads/*
+!backend/uploads/.gitkeep
+!backend/uploads/handpump-dry.jpg
+!backend/uploads/Crop diseas 2.jpg
+!backend/uploads/waste-sakchi.mp4
+coverage/
+*.log

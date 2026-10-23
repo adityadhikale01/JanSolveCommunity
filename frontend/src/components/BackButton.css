@@ -1,0 +1,56 @@
+.symbolic-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--surface-white);
+  border: 1px solid var(--border-light);
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 5px 12px 5px 6px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: var(--shadow-sm);
+  user-select: none;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.symbolic-back-btn:hover {
+  background-color: #f0fdf4;
+  border-color: #86efac;
+  color: var(--primary-700);
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.14);
+}
+
+.symbolic-back-btn:hover .back-arrow-icon {
+  transform: translateX(-3px);
+}
+
+.back-icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--surface-subtle);
+  color: inherit;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.symbolic-back-btn:hover .back-icon-circle {
+  background-color: var(--primary-100);
+  color: var(--primary-700);
+}
+
+.back-arrow-icon {
+  transition: transform 0.2s ease;
+}
+
+.back-btn-text {
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}

@@ -1,0 +1,5 @@
+CNC Description:   
+Develop a low-cost predictive tool-wear monitoring system capable of detecting abnormal machining conditions and predicting when a CNC cutting tool is approaching failure.
+
+Agriculture description:
+Tomato farmers in the village are observing rapid spreading of leaf-related crop disease across multiple farms, resulting in reduced plant growth and increasing crop losses.

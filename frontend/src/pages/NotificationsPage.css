@@ -1,0 +1,121 @@
+.notifs-page-root {
+  padding: 24px 0 60px;
+}
+
+.notifs-container {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.notifs-main-content {
+  flex: 1;
+  min-width: 0;
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notifs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.notifs-header-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.notifs-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.notifs-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.mark-all-btn {
+  font-size: 0.8rem;
+}
+
+.notifs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.notif-card {
+  background-color: var(--surface-white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+.notif-card:hover {
+  background-color: var(--surface-subtle);
+  border-color: var(--border-medium);
+}
+
+.notif-card.unread {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.notif-icon-bubble {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--surface-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.notif-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.notif-message-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.notif-card.unread .notif-message-text {
+  font-weight: 700;
+}
+
+.notif-timestamp {
+  font-size: 0.725rem;
+  color: var(--text-muted);
+}
+
+.unread-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-600);
+  border-radius: 50%;
+  flex-shrink: 0;
+}

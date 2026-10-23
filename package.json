@@ -1,0 +1,15 @@
+{
+  "name": "jansolve-community",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "seed": "npm --prefix backend run seed",
+    "test": "npm --prefix backend test",
+    "test:backend": "npm --prefix backend test",
+    "verify": "npm --prefix backend run verify",
+    "build:frontend": "npm --prefix frontend run build"
+  }
+}
