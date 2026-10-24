@@ -356,11 +356,4 @@ npm run build
 
 ---
 
-## 🛡️ Security & Architecture Best Practices
 
-1. **Strict Role Separation**: Citizen accounts can never access `/api/v1/admin/*` routes or execute review actions. Admin portal enforces route guards and backend checks.
-2. **Review Lifecycle Enforced**: Newly submitted challenges default to `publicationStatus: 'pending_review'` and are blocked from public JanFeed listings until an administrator approves them.
-3. **No Fabricated Data**: All feed counts, urgency metrics, vote tallies, and dashboard cards reflect live MongoDB aggregations.
-4. **Resilient Token Handling**: Frontend API client transparently intercepts HTTP 401s, queues failed requests, and executes silent token refreshes before replaying.
-5. **GeoJSON Geospatial Indexing**: Geospatial coordinates are validated and indexed with MongoDB `2dsphere` indexes for radius-based queries.
-6. **Graceful Error Handling**: Centralized error middleware ensures internal database or stack trace details are sanitized and never leaked to clients.
